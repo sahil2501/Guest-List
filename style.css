@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: yellowgreen;
+    font-size: 100px;
+    font-family: arial;
+    font-weight: bolder;
+    border-bottom-left-radius: 67px;
+    border-top-right-radius: 67px;
+    background-color: red;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 40%;
+    padding: 6px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+input {
+    color: lightblue;
+    background-color: navy;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+input:hover {
+    color: lightblue;
+    background-color: navy;
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding: 6px;
+    margin-bottom: 10px;
+    cursor: text;
+}
+
+button {
+    color: lightblue;
+    background-color: navy;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding: 6px;
+}
+
+button:hover {
+    color: lightblue;
+    background-color: navy;
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: bolder;
+    border-radius: 30px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+hr {
+    border-color: darkgreen;
+    border-width: 10px;
+    border-radius: 75px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+p {
+    font-size: 40px;
+    color: yellow;
+    background-color: goldenrod;
+    font-family: arial;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 39%;
+    padding: 6px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: black;
+    font-family: arial;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 40%;
+    padding: 6px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,72 @@
+<html>
+    <head>
+    <title>Guest List</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      <h1>Guest List</h1>
+       <br>
+      <p>Enter Guest Name</p>
+      <input placeholder="Enter name" id = "input">
+      <br>
+      <button onclick = "submit()">Submit Name</button>
+      <h2 id = "displayer_1"></h2>
+      <hr>
+      <hr>
+      <p>Show Guest Names</p>
+      <button onclick="show()">Show Name/s</button>
+      <h2 id = "displayer_2"></h2>
+      <hr>
+      <hr>
+      <p>Show Sorted Names</p>
+      <button onclick="sort()">Sort Name/s</button>
+      <h2 id = "displayer_3"></h2>
+      <hr>
+      <hr>
+      <p>Search Name</p>
+      <input placeholder = "Search name" id = "search_input">
+      <button onclick = "search()">Search Name</button>
+      <h2 id = "displayer_4"></h2>
+      <script>
+        var name_of_guest1 = [];
+        var name_of_guest2 = [];
+        var name_of_guest3 = [];
+        function submit() {
+        var GuestName1 = document.getElementById("input").value;
+        name_of_guest1.push(GuestName1);
+        console.log(name_of_guest1);
+        document.getElementById("displayer_1").innerHTML = name_of_guest1;
+        }
+        function show() {
+          var GuestName2 = document.getElementById("input").value;
+          name_of_guest2.push("<br>" + GuestName2);
+          console.log(name_of_guest2);
+          document.getElementById("displayer_2").innerHTML = name_of_guest2;
+        }
+        function sort() {
+          var GuestName3 = document.getElementById("input").value;
+          name_of_guest3.push("<br>" + GuestName3);
+          name_of_guest3.sort();
+          console.log(name_of_guest3);
+          document.getElementById("displayer_3").innerHTML = name_of_guest3;
+        }
+        function search() {
+          var search = document.getElementById("search_input").value;
+          var found = 0;
+          for (var j = 0; j < name_of_guest1.length; j++) {
+            if (search == name_of_guest1[j]) {
+              found = found + 1;
+            }
+          }
+          document.getElementById("displayer_4").innerHTML = "Name found " + found + " time/s.";
+          console.log("Name found " + found + " time/s.");
+        }
+      </script>
+    </body>
+    </html>
